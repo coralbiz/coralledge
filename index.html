@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coral Ledge</title>
   <style>
-    /* ===== Basic Page Styling ===== */
     body {
       font-family: Arial, sans-serif;
       background-color: #f7f9fb;
@@ -15,7 +14,6 @@
       padding: 0;
     }
 
-    /* ===== Header Section ===== */
     header {
       background-color: #004c99;
       color: white;
@@ -27,7 +25,6 @@
       font-size: 2.2em;
     }
 
-    /* ===== Main Content ===== */
     main {
       max-width: 600px;
       margin: 80px auto;
@@ -56,7 +53,6 @@
       text-decoration: underline;
     }
 
-    /* ===== Footer ===== */
     footer {
       color: #666;
       font-size: 14px;
@@ -71,21 +67,21 @@
       text-align: center;
     }
 
-    /* Make Credly badge responsive */
+    /* Responsive wrapper for badge */
     .badge-wrapper {
       position: relative;
       width: 100%;
-      max-width: 150px; /* desktop size */
+      max-width: 200px; /* desktop max size */
       margin: 0 auto;
     }
 
     .badge-wrapper iframe {
       width: 100% !important;
       height: auto !important;
-      min-height: 270px; /* fallback for mobile */
+      min-height: 270px;
     }
 
-    /* "Under Construction" text styling */
+    /* Under Construction Text */
     .under-construction {
       margin-top: 20px;
       font-size: 16px;
@@ -93,20 +89,16 @@
       font-style: italic;
     }
 
-    /* Optional: Adjust main margin for small screens */
     @media (max-width: 480px) {
       main {
         margin: 40px 10px;
       }
-
       main h2 {
         font-size: 1.4em;
       }
-
       p {
         font-size: 16px;
       }
-
       .under-construction {
         font-size: 14px;
       }
@@ -125,7 +117,7 @@
     <p><a href="services.html">Services</a></p>
     <p><a href="irs.html">IRS Rules</a></p>
 
-    <!-- ===== Credly Badge Embed ===== -->
+    <!-- ===== Badge Embed ===== -->
     <div class="badge-container">
       <div class="badge-wrapper">
         <div aria-label="Coral Ledge Digital Certificate Badge"
@@ -133,13 +125,14 @@
              data-share-badge-host="https://www.credly.com">
         </div>
       </div>
-      <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
-      <!-- ===== Under Construction Text ===== -->
       <div class="under-construction">
         This site is under construction
       </div>
     </div>
+
+    <!-- Load the Credly embed script at the end -->
+    <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
   </main>
 
@@ -149,3 +142,4 @@
 
 </body>
 </html>
+
